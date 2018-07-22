@@ -6,7 +6,7 @@ class ListUser extends Component {
       <ul>
       {
         this.props.users.map(user => (
-        	<li>{user.name}</li>
+        	<li key={user.id}>{user.name}</li>
         ))
       }
       </ul>
